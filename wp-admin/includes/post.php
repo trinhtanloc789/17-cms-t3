@@ -1,5 +1,4 @@
-<?php
-/**
+<?php /**
  * WordPress Post Administration API.
  *
  * @package WordPress
@@ -645,7 +644,7 @@ function bulk_edit_posts( $post_data = null ) {
 function get_default_post_to_edit( $post_type = 'post', $create_in_db = false ) {
 	$post_title = '';
 	if ( ! empty( $_REQUEST['post_title'] ) ) {
-		$post_title = esc_html( wp_unslash( $_REQUEST['kpost_title'] ) );
+		$post_title = esc_html( wp_unslash( $_REQUEST['post_title'] ) );
 	}
 
 	$post_content = '';

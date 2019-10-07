@@ -638,6 +638,9 @@ function twentyseventeen_unique_id( $prefix = '' ) {
 	return $prefix . (string) ++$id_counter;
 }
 
+
+
+
 /**
  * Implement the Custom Header feature.
  */

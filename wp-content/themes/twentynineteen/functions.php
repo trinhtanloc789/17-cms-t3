@@ -292,6 +292,30 @@ function twentynineteen_colors_css_wrap() {
 }
 add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
 
+function my_modify_press_table( $columns ) {
+    $columns = insertArrayAtPosition($columns, array('thumb' => 'Thumb'), 1); // add in second place ( after checkbox - array starts at 0)
+    $columns = insertArrayAtPosition($columns, array('press_date' => 'Mag. Date'), 3);  //add as the 4th column (after the title)
+    return $columns;
+}
+add_filter( 'manage_press_posts_columns', 'my_modify_press_table' );
+
+function my_modify_press_table_row( $column_name, $post_id ) {
+    $custom_fields = get_post_custom( $post_id );
+
+    switch ($column_name) {
+        case 'thumb' :
+            echo (isset($custom_fields['thumb'][0])) ? '<img src="'.get_field('thumb', $post_id).'" alt="tumb" style="width: 70px">' : ' ';
+            break;
+        case 'press_date' :
+            echo (isset($custom_fields['thumb'][0])) ? $custom_fields['press_date'][0] : ' ';
+            break;
+        default:
+    }
+}
+add_action( 'manage_press_posts_custom_column', 'my_modify_press_table_row', 10, 2 );
+
+
+
 /**
  * SVG Icons class.
  */

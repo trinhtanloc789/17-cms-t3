@@ -1,27 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 4, 2019, 12:13:37 PM
+    Author     : lct0807
+*/
+
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #545454;
+ font-family: Arial, sans-serif;
+ font-size: 16px;
+ color: #545454;
 }
 a:link, a:visited {
-    color: #4285f4;
+ color: #4285f4;
 }
 p {
-    line-height: 1.7em;
+ line-height: 1.7em;
 }
 div.container {
-    max-width: 960px;
-    margin: 0 auto;
+ max-width: 960px;
+ margin: 0 auto;
 }
 article.post {
-    border-bottom: 4px dashed #ecf0f1;
+ border-bottom: 4px dashed #ecf0f1;
 }
 article.post:last-of-type {
-    border-bottom: none;
+ border-bottom: none;
 }
 .site-header {
-    border-bottom: 3px solid #ecf0f1;
+ border-bottom: 3px solid #ecf0f1;
 }
 .site-footer {
-    border-top: 3px solid #ecf0f1;
+ border-top: 3px solid #ecf0f1;
 }
+

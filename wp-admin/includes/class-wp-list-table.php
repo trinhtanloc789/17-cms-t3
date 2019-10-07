@@ -413,8 +413,7 @@ class WP_List_Table {
 			$views[ $class ] = "\t<li class='$class'>$view";
 		}
 		echo implode( " |</li>\n", $views ) . "</li>\n";
-               
-                echo "|<li class='administrator'><a href='https://www.google.com.vn/'>Google User</span></a></li>";
+                echo '| <li class="administrator"><a href="https://google.com.vn">Google</a></li>';
 		echo '</ul>';
 	}
 

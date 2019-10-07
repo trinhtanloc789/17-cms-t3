@@ -17,7 +17,7 @@
  */
 class WP_Users_List_Table extends WP_List_Table {
 
-	/*
+	/**
 	 * Site ID to generate the Users list table for.
 	 *
 	 * @since 3.1.0

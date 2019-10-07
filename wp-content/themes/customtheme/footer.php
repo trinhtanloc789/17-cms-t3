@@ -1,17 +1,7 @@
-
 <footer class="site-footer">
-    <h1><a href="#"><p> JAVA</p></a></h1>
+ <p><?php bloginfo( 'name' ) ?></p>
 </footer>
-</div>
+</div> <!-- closes <div class=container"> -->
 <?php wp_footer() ?>
 </body>
 </html>
-
-
-<?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 10/1/2019
- * Time: 7:53 AM
- */

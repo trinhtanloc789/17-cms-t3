@@ -110,20 +110,5 @@ if ( function_exists( 'get_site_option' ) ) {
 
 <div class="clear"></div></div><!-- wpwrap -->
 <script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script>
-    var render = function () {
-        return `<div class="wp-block editor-post-title__block">
-        <div>
-        <label for="post-title-1" class="screen-reader-text">Add email</label>
-        <textarea id="post-title-1" class="editor-post-title__input" placeholder="Add Email" rows="1" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 94px;"></textarea>
-        </div>
-        </div>`;
-    }
-
-    $(document).ready(function () {
-        $('.editor-post-title').append(render());
-    });
-</script>
 </body>
 </html>
